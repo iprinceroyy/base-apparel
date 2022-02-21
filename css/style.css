@@ -17,8 +17,10 @@
 body {
     font-size: var(--fs);
     font-family: var(--ff-sans-josefin);
-    line-height: 1.5;
 }
+
+
+/* parent of all elements */
 
 .container {
     display: flex;
@@ -30,9 +32,42 @@ body {
     margin: 2rem;
 }
 
+
+/* top image */
+
 .container .img-mobile {
     width: 100%;
     height: auto;
+}
+
+
+/* description section */
+
+.description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.description>h1 {
+    font-size: 3rem;
+    font-weight: var(--fw-600);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.description>h1 span {
+    font-size: 3rem;
+    font-weight: var(--fw-300);
+    color: var(--desaturated-red);
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .attribution {
