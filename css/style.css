@@ -36,18 +36,19 @@ body {
 /* top image */
 
 .container .img-mobile {
+    position: relative;
     width: 100%;
-    height: auto;
 }
 
 
 /* description section */
 
 .description {
-    text-align: center;
+    text-align: justify;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    width: 70%;
+    padding: 0 2rem;
 }
 
 .description>h1 {
@@ -67,6 +68,7 @@ body {
 .description p {
     line-height: 1.5;
     color: var(--desaturated-red);
+    font-size: 1rem;
 }
 
 form {
