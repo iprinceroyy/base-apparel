@@ -19,17 +19,18 @@ body {
     font-family: var(--ff-sans-josefin);
 }
 
+header .logo {
+    width: 100%;
+    margin: 2rem;
+}
+
 
 /* parent of all elements */
 
 .container {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-.container .logo {
-    width: 100%;
-    margin: 2rem;
 }
 
 
@@ -37,18 +38,23 @@ body {
 
 .container .img-mobile {
     position: relative;
+    justify-content: flex-start;
     width: 100%;
+}
+
+.img-desktop {
+    display: none;
 }
 
 
 /* description section */
 
 .description {
-    text-align: justify;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    width: 70%;
-    padding: 0 2rem;
+    margin: 3rem 0;
+    padding: 0 2.4rem;
 }
 
 .description>h1 {
@@ -66,6 +72,7 @@ body {
 }
 
 .description p {
+    font-weight: var(--fw-400);
     line-height: 1.5;
     color: var(--desaturated-red);
     font-size: 1rem;
@@ -75,6 +82,21 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+@media (min-width: 1020px) {
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .container .img-mobile {
+        display: none;
+    }
+    .img-desktop {
+        display: contents;
+        width: 100%;
+    }
 }
 
 .attribution {
