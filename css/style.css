@@ -64,6 +64,11 @@ body {
     text-transform: uppercase;
 }
 
+.description p {
+    line-height: 1.5;
+    color: var(--desaturated-red);
+}
+
 form {
     display: flex;
     flex-direction: row;
