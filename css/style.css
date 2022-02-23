@@ -24,7 +24,7 @@ body {
 /* parent of all elements */
 
 .container {
-    min-height: 100vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -121,7 +121,8 @@ button#btn {
 }
 
 footer {
-    position: absolute;
+    position: relative;
+    top: 4.5rem;
 }
 
 .attribution {
@@ -139,24 +140,43 @@ footer {
         background-image: url("../assets/images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     }
     .container {
-        height: 100vh;
+        position: relative;
+        min-height: 100vh;
         display: flex;
         flex-direction: row;
+    }
+    div.col-1 {
+        flex-basis: 60rem;
+        margin: 5rem 17rem 0 8rem;
     }
     .container .img-mobile {
         display: none;
     }
     div.col-2 {
-        flex-basis: 50rem;
+        flex-basis: 75rem;
+        object-fit: cover;
     }
     .img-desktop {
         display: contents;
         width: 100%;
     }
     .img-desktop img {
+        width: 100%;
         height: 100vh;
+    }
+    .description {
+        text-align: start;
     }
     footer {
         position: absolute;
+        bottom: 1rem;
+        right: 60rem;
+        text-align: center;
+    }
+    .attribution {
+        font-size: 0.85rem;
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%);
     }
 }
