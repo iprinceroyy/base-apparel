@@ -20,19 +20,21 @@ body {
     background: rgba(255, 193, 193, 0.13);
 }
 
-header .logo {
-    width: 100%;
-    margin: 2rem;
-}
-
 
 /* parent of all elements */
 
 .container {
-    max-width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+
+/* logo */
+
+div.logo {
+    width: 30%;
+    margin: 2rem;
 }
 
 
@@ -88,15 +90,33 @@ header .logo {
 /* form */
 
 form {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 input[type="email"] {
-    border-width: 1px;
-    border-radius: 15px;
-    background: rgba(255, 193, 193, 0.13);
+    width: 100%;
+    border: 1px solid rgba(235, 135, 135, 0.61);
+    border-radius: 50px;
+    background: transparent;
+    padding: 1rem 1.5rem;
+}
+
+input[type="email"]::placeholder {
+    font-size: 1rem;
+    color: var(--soft-red);
+    opacity: 0.6;
+}
+
+button#btn {
+    border: none;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 20px;
+    position: absolute;
+    right: 0rem;
+    padding: 0 1rem;
 }
 
 @media (min-width: 1020px) {
@@ -111,6 +131,7 @@ input[type="email"] {
     .img-desktop {
         display: contents;
         width: 100%;
+        height: 110vh;
     }
 }
 
