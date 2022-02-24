@@ -38,12 +38,14 @@
 
                 <form action="#" id="form">
                     <label for="email"></label>
-                    <input id="email" type="email" name="email" placeholder="Email Address" />
+                    <input id="email" type="email" name="email" placeholder="Email Address" aria-describedby="messageAlert" />
 
                     <label for="btn"></label>
                     <button type="submit" id="btn">
                         <img src="assets/images/icon-arrow.svg" aria-label="arrow icon" />
                     </button>
+
+                    <p class="alert" id="messageAlert" aria-live="polite"></p>
                 </form>
             </section>
         </div>
