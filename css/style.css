@@ -168,9 +168,9 @@ footer {
         text-align: start;
     }
     footer {
-        position: absolute;
-        bottom: 1rem;
-        right: 60rem;
+        position: fixed;
+        top: 46rem;
+        left: 14rem;
         text-align: center;
     }
     .attribution {
