@@ -35,5 +35,5 @@ Users should be able to:
 
 ## Author
 
--   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/iprinceroyy)
--   Twitter - [@yourusername](https://www.twitter.com/prince_popups)
+-   Frontend Mentor - [@iprinceroyy](https://www.frontendmentor.io/profile/iprinceroyy)
+-   Twitter - [@prince_popups](https://www.twitter.com/prince_popups)
