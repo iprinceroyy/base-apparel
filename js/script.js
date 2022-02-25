@@ -1,6 +1,7 @@
 const form = document.querySelector("#form");
 const myAlert = document.querySelector(".alert");
 const email = document.querySelector(".email");
+const btn = document.getElementById("btn");
 
 function isValidEmail(userEmail) {
     const regexEmail =
@@ -19,6 +20,7 @@ function validateField() {
     } else {
         myAlert.innerText = "Please provide a valid email";
         email.classList.add("invalid");
+        btn.style.outline = "none";
     }
 }
 

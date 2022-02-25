@@ -34,7 +34,7 @@ body {
 
 div.logo {
     width: 30%;
-    margin: 2rem;
+    margin: 2rem 2.5rem 1.95rem;
 }
 
 
@@ -103,6 +103,7 @@ input[type="email"] {
     border-radius: 50px;
     background: transparent;
     padding: 1rem 1.5rem;
+    z-index: -8;
 }
 
 input[type="email"]::placeholder {
@@ -116,7 +117,6 @@ input.invalid {
     background-image: url("../assets/images/icon-error.svg");
     background-position: 75% center;
     background-repeat: no-repeat;
-    outline: none;
 }
 
 button#btn {
@@ -127,21 +127,21 @@ button#btn {
     right: 0rem;
     padding: 0.95rem 1.7rem;
     box-shadow: 10px 10px 25px 1px hsl(0, 93%, 82%);
-    transition: transform .2s;
 }
 
 #btn:active {
     cursor: pointer;
-    opacity: 0.6;
+    background: rgb(255, 206, 206);
     outline: none;
 }
 
 #btn:visited {
     outline: none;
+    border: none;
 }
 
 #btn:hover {
-    transform: scale(1.1);
+    background: rgb(255, 206, 206);
 }
 
 .alert {
@@ -171,6 +171,9 @@ footer {
         background-color: #fff;
         background-image: url("../assets/images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     }
+    div.logo {
+        margin: 1rem 2.5rem 3rem;
+    }
     .container {
         position: relative;
         min-height: 100vh;
@@ -178,15 +181,14 @@ footer {
         flex-direction: row;
     }
     div.col-1 {
-        flex-basis: 60rem;
-        margin: 5rem 17rem 0 8rem;
+        flex-basis: 80rem;
+        padding: 5rem 11.5rem 0 8rem;
     }
     .container .img-mobile {
         display: none;
     }
     div.col-2 {
-        flex-basis: 75rem;
-        object-fit: cover;
+        flex-basis: 65rem;
     }
     .img-desktop {
         display: contents;
@@ -197,18 +199,28 @@ footer {
         height: 100vh;
     }
     .description {
-        text-align: start;
+        text-align: justify;
     }
-    footer {
-        position: fixed;
-        top: 46rem;
-        left: 14rem;
-        text-align: center;
+    button#btn {
+        padding: 0.95rem 2.2rem;
+        right: -10px;
     }
-    .attribution {
-        font-size: 0.85rem;
-    }
-    .attribution a {
-        color: hsl(228, 45%, 44%);
-    }
+}
+
+footer {
+    position: fixed;
+    top: 46rem;
+    left: 14rem;
+    text-align: center;
+}
+
+.attribution {
+    font-size: 0.85rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
 }
