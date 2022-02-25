@@ -172,7 +172,7 @@ footer {
         background-image: url("../assets/images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     }
     div.logo {
-        margin: 1rem 2.5rem 3rem;
+        margin: 0 2.5rem 5.5rem;
     }
     .container {
         position: relative;
@@ -201,26 +201,24 @@ footer {
     .description {
         text-align: justify;
     }
+    .description>h1 {
+        text-align: start;
+        margin: 0 2rem 1.5rem 0;
+    }
     button#btn {
         padding: 0.95rem 2.2rem;
         right: -10px;
     }
-}
-
-footer {
-    position: fixed;
-    top: 46rem;
-    left: 14rem;
-    text-align: center;
-}
-
-.attribution {
-    font-size: 0.85rem;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
-
+    footer {
+        position: fixed;
+        top: 46rem;
+        left: 20rem;
+        text-align: center;
+    }
+    .attribution {
+        font-size: 0.85rem;
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
 }
