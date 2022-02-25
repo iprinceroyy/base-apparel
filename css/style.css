@@ -78,7 +78,7 @@ div.logo {
     margin: 0 0 1rem;
 }
 
-.description p {
+.description>p {
     font-size: 1rem;
     font-weight: var(--fw-400);
     color: var(--desaturated-red);
@@ -103,7 +103,6 @@ input[type="email"] {
     border-radius: 50px;
     background: transparent;
     padding: 1rem 1.5rem;
-    z-index: -8;
 }
 
 input[type="email"]::placeholder {
@@ -113,7 +112,7 @@ input[type="email"]::placeholder {
 }
 
 input.invalid {
-    border: 1px solid red;
+    border: 1.2px solid red;
     background-image: url("../assets/images/icon-error.svg");
     background-position: 75% center;
     background-repeat: no-repeat;
@@ -144,9 +143,12 @@ button#btn {
     background: rgb(255, 206, 206);
 }
 
+
+/* warning */
+
 .alert {
     font-size: 0.8rem;
-    color: var(--soft-red);
+    color: red;
     position: relative;
     top: 0.5rem;
     right: 3rem;
@@ -208,6 +210,9 @@ footer {
     button#btn {
         padding: 0.95rem 2.2rem;
         right: -10px;
+    }
+    .alert {
+        right: 9rem;
     }
     footer {
         position: fixed;
